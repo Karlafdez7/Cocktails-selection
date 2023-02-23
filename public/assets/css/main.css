@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.code {
+  font-size: 16px;
+  background: #d8d8d8;
+  padding: 0 5px;
+  border-radius: 5px; }
+
+.link__adalab:hover {
+  background-color: #099d8d;
+  color: #fff; }
+
+.link__github:hover {
+  background-color: #CCC;
+  color: #000; }
+
+.main {
+  margin: 50px; }
+
+.search {
+  margin: 10px; }
+
+.reset {
+  margin: 10px; }
+
+.main__list {
+  padding-left: 2rem;
+  padding-bottom: 20px; }
+
+/*# sourceMappingURL=main.css.map */
