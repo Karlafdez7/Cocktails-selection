@@ -26,6 +26,9 @@
 .reset {
   margin: 10px; }
 
+.select {
+  background-color: aqua; }
+
 .main__list {
   padding-left: 2rem;
   padding-bottom: 20px; }
