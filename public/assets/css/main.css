@@ -27,7 +27,8 @@
   margin: 10px; }
 
 .select {
-  background-color: aqua; }
+  background-color: aqua;
+  color: white; }
 
 .main__list {
   padding-left: 2rem;
