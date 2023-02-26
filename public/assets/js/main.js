@@ -83,6 +83,16 @@ function renderCocktailsStructure(cocktails) {
   return html;
 }
 
+
+//Creamos una función para la estrucutra de favoritos ya que vamos a necesitar generar un icono X (para eliminar el cóctel) desde lista favoritos. 
+//Además de copiar el línk de awsome icon, le colocamos una clase de js para poder traerla al js y activarle un evento click. Además debemos añadir la ID del cóctel ya que es la forma en que añadimos o quitamos de fav.
+function renderCocktailsStructureFav(cocktails) {
+  let html =  `<li class="js-elementLi" id=${cocktails.idDrink}><h3>${cocktails.strDrink} <img class ="js-DeleteX"src='./assets/images/favicon.png'  id=${cocktails.idDrink}></h3>
+    <img class='imagen-prueba' src= ${cocktails.strDrinkThumb} /> </li>`;
+  return html;
+}
+
+//class="< class="fa-solid fa-x js-DeleteX"
 //Creao la función que va a contener las acciones que desencadena "click" a un cocktail (la llamo en el eventList de abajo)
 //En esta función: poner o quitar selección / Llevar a la ul de favoritos el cóctel seleccionado
 
@@ -103,13 +113,30 @@ function handleClickElementLi(ev){
 
 //Para poder pintar la lista de favoritos que se realiza en la función anterior (handleClickElementLi) que luego llamamos para que se ejecute en el momento que se crea.
 //Se ha podido reautilizar la función renderCocktailsStructure ya que se creo como una estructura para poder trabajar varias veces
+//
+//Se ejecuta aquí el evento X (eliminar favorito) ya que es el momento que se pinta la lista de fasvoritos. 
  function renderFavourites (cocktailsfav) {
     listFavourites.innerHTML = '';
     for (const cocktailfav of cocktailsfav) {
-    listFavourites.innerHTML += renderCocktailsStructure(cocktailfav);
+    listFavourites.innerHTML += renderCocktailsStructureFav(cocktailfav);
   }
+    addEventToXfavourite();
  }
 
+//Al click de la img X le debemos dar unas acciones a realizar: creamos esta función
+//El proceso es similar al que realizamos para crear la lista, con la diferencia que en esta función solo debemos coger las parte que sirven para quitar.
+function handleClickXFavourite (ev) {
+     const idSelected = ev.currentTarget.id;
+     const indexCocktailFav= listFavouritesCocktailsData.findIndex(cocktails => cocktails.idDrink === idSelected);
+     if (indexCocktailFav) {
+        listFavouritesCocktailsData.splice(indexCocktailFav, 1);
+     }
+    
+    renderFavourites(listFavouritesCocktailsData);
+    localStorage.setItem('itemCocktails', JSON.stringify(listFavouritesCocktailsData)); 
+    console.log('Hola')
+
+}
 
 //Una vez he conseguido que la lista de la API se cargue con la los margaritas:
 //Creo mis eventos aquí abajo ⬇️ 
@@ -125,8 +152,19 @@ function addEventToCocktails() {
     const elementLi=document.querySelectorAll(".js-elementLi")
     for (const li of elementLi) {
         li.addEventListener('click', handleClickElementLi);
-
     }
+    renderFavourites(listFavouritesCocktailsData);
+    localStorage.setItem('itemCocktails', JSON.stringify(listFavouritesCocktailsData));
 }
 
+//Creamos un evento en la imagen X que hemos creado para que pueda eliminar cócteles.
+//Al poner la class a todo aquel cóctel que sea seleccionado y pase al otro lado, se va a hacer un SelectorAll
+//Luego debemos hacer un bucle para ir otorgandole a cada X de un cóctel el evento click
+function addEventToXfavourite (){
+    const xFavourites= document.querySelectorAll('.js-DeleteX');
+    for (const xFavourite of xFavourites) {
+        xFavourite.addEventListener('click', handleClickXFavourite);
+     
+    }
+} 
 //# sourceMappingURL=main.js.map
