@@ -10,6 +10,8 @@ const listFavourites=document.querySelector(".js-favourites");
 
 const listCocktails=document.querySelector(".js-cocktails")
 
+const btnDeleteFavourites=document.querySelector('.js-btnDelet')
+
 
 
 //Lista vacía para rellenar con los datos de la API
@@ -138,6 +140,14 @@ function handleClickXFavourite (ev) {
 
 }
 
+//Al click debemos ofrecerle una función que indique que debe pasar: en este caso lo que se busca con el delet favourite es que los cócteles que estan en favorito se limpie. 
+//Si lo que se busca es vaciar la lista de favoritos
+function handleClickDeleteFavourites () {
+    listFavourites.innerHTML = '';
+    localStorage.removeItem('itemCocktails');
+
+}
+
 //Una vez he conseguido que la lista de la API se cargue con la los margaritas:
 //Creo mis eventos aquí abajo ⬇️ 
 //Arriba iremos poniendo las funciones que se ejecutan cuando activamos el evento
@@ -167,4 +177,7 @@ function addEventToXfavourite (){
      
     }
 } 
+
+//Se trae el botón de reset favorito del html al JS para poder trabajar. Debemos añadirle el evento click
+btnDeleteFavourites.addEventListener('click', handleClickDeleteFavourites)
 //# sourceMappingURL=main.js.map
