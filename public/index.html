@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adalab Web Starter Kit</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Cocktail Karla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
+  <link rel="icon" href="./assets/images/logococktail.png" />
   <script src="https://kit.fontawesome.com/9d5ad03fe2.js" crossorigin="anonymous"></script>
 
 </head>
@@ -16,42 +18,48 @@
 
 <body>
   <div class="page">
-    
+    <header class="header">
+        <h1 class="title"> PERDÓN QUE MI CÓCTEL TE SAL.PIQUE </h1>
+        <form action="" class="form">
+            <label class="input-search" for="input"> Buscador de cócteles:
+                <input type="text" id="input" class=" input js-inputSearch" />
+            </label>
+            <label for="search">
+                <input type="button" value="Buscar" id="search" class="btnSearch js-btnSearch" />
+            </label>
+            <input type="button" value="Reset" id="reset" class="btnReasert js-btnReset" />
+            </label>
+
+        </form>
+    </header>
     <main class="main">
-      <h1 class="title">Cocktails </h1>
 
-      <form action="" class="form">
-        <label for="input"> Buscador de cócteles:
-          <input type="text" id="input" class=" js-inputSearch" />
-        </label>
-        <label for="search">
-          <input type="button" value="Buscar" id="search" class="js-btnSearch" />
-        </label>
-        <input type="button" value="Reset" id="reset" class=" js-btnReset" />
-        </label>
-
-      </form>
-      <section>
-        <h2>Resultado de búsqueda</h2>
-
-
-        <ul class="js-cocktails">
-
+      <section class="container-cocktails">
+        <h2 class="title-cocktails">Resultado de búsqueda</h2>
+        <ul class="list-cocktails js-cocktails">
         </ul>
       </section>
-      <section>
-        <h2>Favoritos</h2>
-        <ul class="js-favourites">
+      <section class="container-cocktails">
+        <!-- <div class="container-fav-reset"> -->
+        <h2 class="title-favourites"> Favoritos </h2>
 
 
+        <!-- </div> -->
+
+        <ul class="list-favourites js-favourites">
         </ul>
-        </label>
-        <input type="button" value="reset" class=" js-btnDelet" />
-        </label>
       </section>
+      <label for="input">
+        <input type="button" value="Reset" class="btn-delet js-btnDelet" />
+      </label>
 
     </main>
-    
+    <footer class="footer">
+        <img class="img-cocktail" src="./assets/images/logococktail.png" alt="cocktail">
+        <h4 class="footer-copy"> © Karla Fernández Chirinos 2023</h4>
+
+
+    </footer>
   </div>
   <script src="./assets/js/main.js"></script>
 </body>

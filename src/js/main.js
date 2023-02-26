@@ -80,8 +80,8 @@ function renderCocktailsList (listCocktailsData) {
 //Crear estructura de LI que se pintará en el HTML 
 //Usar referencia del objeto para cada dato que necesito. En este caso el nombre del cocktail (strDrink) y la imagen del cocktail (strDrinkThumb)
 function renderCocktailsStructure(cocktails) {
-  let html =  `<li class="js-elementLi" id=${cocktails.idDrink}>${cocktails.strDrink}
-    <img src= ${cocktails.strDrinkThumb} /> </li>`;
+  let html =  `<li class="js-elementLi list-all" id=${cocktails.idDrink}><h3 class="name-cocktail">${cocktails.strDrink}</h3>
+    <img class="image-cocktails" src= ${cocktails.strDrinkThumb} alt="${cocktails.strDrink}" title="${cocktails.strDrink}"/> </li>`;
   return html;
 }
 
@@ -89,8 +89,8 @@ function renderCocktailsStructure(cocktails) {
 //Creamos una función para la estrucutra de favoritos ya que vamos a necesitar generar un icono X (para eliminar el cóctel) desde lista favoritos. 
 //Además de copiar el línk de awsome icon, le colocamos una clase de js para poder traerla al js y activarle un evento click. Además debemos añadir la ID del cóctel ya que es la forma en que añadimos o quitamos de fav.
 function renderCocktailsStructureFav(cocktails) {
-  let html =  `<li class="js-elementLi" id=${cocktails.idDrink}><h3>${cocktails.strDrink} <img class ="js-DeleteX"src='./assets/images/favicon.png'  id=${cocktails.idDrink}></h3>
-    <img class='imagen-prueba' src= ${cocktails.strDrinkThumb} /> </li>`;
+  let html =  `<li class="list-fav js-elementLi" id=${cocktails.idDrink}><i class="fa-solid fa-circle-xmark js-DeleteX x-delete" id=${cocktails.idDrink}></i><h3 class="name-cocktail-fav" >${cocktails.strDrink}</h3>
+    <img class="image-cocktails_fav" src= ${cocktails.strDrinkThumb} alt="${cocktails.strDrink}" title="${cocktails.strDrink}"/> </li>`;
   return html;
 }
 
@@ -192,3 +192,9 @@ btnDeleteFavourites.addEventListener('click', handleClickDeleteFavourites)
 
 //Traemos el botón Reset a JS y le damos un evento click
 btnResetUser.addEventListener('click', handleClickResetAll)
+
+
+//Pendientes:
+//1) Que se mantenga selecionado en la lista general todos los que estén guardados como favoritos: se comprende que se debería hacer en el momento que se pinta la lista y el proceso debe ser similar al que realizamos cuando hacemos el "select". 
+//2) Cuando se eliminan los cócteles con la X: se hace correctamente hasta que solo queda uno y ya no se puede eliminar
+//3)En CSS el select no coge el color

@@ -1,17 +1,114 @@
 .main{
+  background-image: url(../images/fun-cocktail.png);
   margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
 } 
 
-.search{
-  margin: 10px;
-} 
 
-.reset{
-  margin: 10px;
+.title-cocktails {
+  margin-top: 3rem;
+  font-size: 7rem;
+  background-color: white;
+  color: darkblue;
+  text-shadow: -3px 3px rgb(3, 3, 88) ;
+  text-align: center;
 }
 
+.list-all{
+  background-color: white;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+.list-cocktails {
+  width: 40%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.name-cocktail {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 3rem;
+  color: darkblue;
+}
+
+.image-cocktails{
+  margin: 2rem 15rem;
+  width: 40rem;
+  height: 40rem;
+}
+
+// .container-fav-reset {
+//   display: grid;
+//   grid-template-columns: 3fr 0.4fr;
+// }
+.title-favourites {
+  margin-top: 3rem;
+  font-size: 7rem;
+  background-color: white;
+  color: darkblue;
+  text-shadow: -3px 3px rgb(3, 3, 88);
+  text-align: center;
+}
+
+.btn-delet {
+  font-size: 3rem;
+  padding:1rem 4rem;
+  margin: 4.5rem 2rem;
+  border-radius: 2rem;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: end;
+}
+
+.list-favourites {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.list-fav {
+  background-color: rgba(230, 230, 126, 0.8);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.name-cocktail-fav {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 3rem;
+  color: rgb(130, 57, 57);
+}
+
+.x-delete {
+  margin-left: 2rem;
+  font-size: 5rem;
+}
+
+.image-cocktails_fav{
+  margin: 2rem 15rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+// .search{
+//   margin: 10px;
+// } 
+
+// .reset{
+//   margin: 10px;
+// }
+
 .select {
-  background-color: aqua;
   color: white;
+  background-color:aqua;
+  // background-color: darkblue;
+
 }
 

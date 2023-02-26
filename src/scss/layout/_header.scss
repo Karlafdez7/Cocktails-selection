@@ -1,0 +1,46 @@
+.header{
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 8rem;
+    margin: 10rem;
+    font-weight: bold;
+    color: darkblue;
+    text-shadow: -3px 3px rgb(3, 3, 88);
+}
+
+.form {
+    display: flex;
+    justify-content: end;
+    // flex-direction: column;
+    margin: 5rem;
+    font-size: 7rem;
+    font-weight: 400;
+    color: darkblue;
+}
+
+.input{
+    border-style: dotted;
+    border-color: cornflowerblue;
+    // padding: 2rem 4rem;
+    margin-left: 1rem;
+    font-size: 4rem;
+}
+.btnSearch {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    border-radius: 2rem;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+
+.btnReasert {
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    border-radius: 2rem;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
