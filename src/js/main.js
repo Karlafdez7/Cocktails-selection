@@ -148,6 +148,15 @@ function handleClickDeleteFavourites () {
 
 }
 
+//Le damos un función al evento click que haga: limpiar la lista de cócteles /limpiar lista de favoritos/ quitar el Local que guardo los favoritos/
+//Al vaciar la lista no se vuelve a poner la lista predeterminada, solución: que se reactualice la página una vez limpiado todos los campos. 
+function handleClickResetAll () {
+    listCocktails.innerHTML= '';
+    listFavourites.innerHTML = '';
+    location.reload();
+    localStorage.removeItem('itemCocktails');   
+}
+
 //Una vez he conseguido que la lista de la API se cargue con la los margaritas:
 //Creo mis eventos aquí abajo ⬇️ 
 //Arriba iremos poniendo las funciones que se ejecutan cuando activamos el evento
@@ -180,3 +189,6 @@ function addEventToXfavourite (){
 
 //Se trae el botón de reset favorito del html al JS para poder trabajar. Debemos añadirle el evento click
 btnDeleteFavourites.addEventListener('click', handleClickDeleteFavourites)
+
+//Traemos el botón Reset a JS y le damos un evento click
+btnResetUser.addEventListener('click', handleClickResetAll)
