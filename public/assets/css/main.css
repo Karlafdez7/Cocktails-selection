@@ -48,8 +48,7 @@
   font-size: 6rem;
   font-weight: 500;
   text-align: center;
-  margin: 3rem;
-  color: darkblue; }
+  margin: 3rem; }
 
 .image-cocktails {
   margin: 2rem 15rem;
@@ -103,7 +102,7 @@
 
 .select {
   color: white;
-  background-color: aqua; }
+  background-color: black; }
 
 .title {
   display: flex;
