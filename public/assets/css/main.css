@@ -5,20 +5,6 @@
   font-size: 62.5%;
   font-family: 'Caveat', cursive; }
 
-.code {
-  font-size: 16px;
-  background: #d8d8d8;
-  padding: 0 5px;
-  border-radius: 5px; }
-
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff; }
-
-.link__github:hover {
-  background-color: #CCC;
-  color: #000; }
-
 .main {
   background-image: url(../images/fun-cocktail.png);
   margin: 50px;
@@ -34,6 +20,7 @@
   text-align: center; }
 
 .list-all {
+  color: darkblue;
   background-color: white;
   padding: 3rem;
   margin-top: 2rem; }
@@ -100,9 +87,9 @@
   width: 30rem;
   height: 30rem; }
 
-.select {
+.select.list-all {
   color: white;
-  background-color: black; }
+  background-color: darkblue; }
 
 .title {
   display: flex;

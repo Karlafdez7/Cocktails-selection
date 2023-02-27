@@ -15,6 +15,7 @@
 }
 
 .list-all{
+  color: darkblue;
   background-color: white;
   padding: 3rem;
   margin-top: 2rem;
@@ -93,8 +94,8 @@
   height: 30rem;
 }
 
-.select  {
+.select.list-all {
   color: white;
-  background-color: black;
+  background-color: darkblue;
 }
 
