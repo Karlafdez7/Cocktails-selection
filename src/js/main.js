@@ -214,7 +214,3 @@ btnDeleteFavourites.addEventListener('click', handleClickDeleteFavourites)
 btnResetUser.addEventListener('click', handleClickResetAll)
 
 
-//Pendientes:
-//1) Que se mantenga selecionado en la lista general todos los que estén guardados como favoritos: se comprende que se debería hacer en el momento que se pinta la lista y el proceso debe ser similar al que realizamos cuando hacemos el "select". 
-//2) Cuando se eliminan los cócteles con la X: se hace correctamente hasta que solo queda uno y ya no se puede eliminar
-//3)En CSS el select no coge el color

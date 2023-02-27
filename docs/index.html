@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cocktail Karla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/logococktail.png" />
+  <script src="https://kit.fontawesome.com/9d5ad03fe2.js" crossorigin="anonymous"></script>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+</head>
+
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+        <h1 class="title"> PERDÓN QUE MI CÓCTEL TE SAL.PIQUE </h1>
+        <form action="" class="form">
+            <label class="input-search" for="input"> Buscador de cócteles:
+                <input type="text" id="input" class=" input js-inputSearch" />
+            </label>
+            <label for="search">
+                <input type="button" value="Buscar" id="search" class="btnSearch js-btnSearch" />
+            </label>
+            <input type="button" value="Reset" id="reset" class="btnReasert js-btnReset" />
+            </label>
+
+        </form>
+    </header>
+    <main class="main">
+
+      <section class="container-cocktails">
+        <h2 class="title-cocktails">Resultado de búsqueda</h2>
+        <ul class="list-cocktails js-cocktails">
         </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
+      </section>
+      <section class="container-cocktails">
+        <!-- <div class="container-fav-reset"> -->
+        <h2 class="title-favourites"> Favoritos </h2>
+
+
+        <!-- </div> -->
+
+        <ul class="list-favourites js-favourites">
         </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </section>
+      <label for="input">
+        <input type="button" value="Reset" class="btn-delet js-btnDelet" />
+      </label>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    </main>
+    <footer class="footer">
+        <img class="img-cocktail" src="./assets/images/logococktail.png" alt="cocktail">
+        <h4 class="footer-copy"> © Karla Fernández Chirinos 2023</h4>
 
-          </li>
-        </ul>
-      </main>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    </footer>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
 
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
