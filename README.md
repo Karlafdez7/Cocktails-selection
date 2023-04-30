@@ -64,7 +64,7 @@ How to proceed:
 
 ## To start the project:
 
-- In the GitHub repository - About section, you can find the link that will take you to the website. Here it is:
+- In the GitHub repository - About section, you can find the link that will take you to the website. Here it is:https://karlafdez7.github.io/Cocktails-selection/
 
 - Want to see it with all the code? Clone the repository in your preferred code editor and type in the terminal: npm start
 
