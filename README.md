@@ -1,31 +1,87 @@
-# Proyecto Final Módulo 2: Karla Fernández Chirinos
+# Cocktail menu. Choose your favorite 
 
-En este nuevo proyecto se ha conseguido realizar una página web interactiva se selección y buscador de cócteles.
+My first website with **JavaScript**
 
-Os dejo unas pequeñas pauta a seguir para poder disfrutar de mi trabajo y ciertas informaciones que serán de interes.
+In this new project, an interactive website for selecting and searching cocktails has been successfully created.You will also be able to create a list with your favorite cocktails and customize it to your liking, removing those that are no longer your favorites or even starting your list again.
 
-## Guía de inicio rápido
+## Tools used:
+- VISUAL STUDIO CODE (VSC) 🗄️
+- HTML 📌
+- CSS 🕹️
+- JS 🔗
+- GIT / GITHUB 📂
+- SASS / SCSS 🔗
+- API 🔎
+- LOCALSTORAGE 💾
+- GULP 🖌️
 
-#### Para poner en marcha el proyecto:
+## Operation of the web
 
-- En el repositorio GitHub - About podrán encontrar el enlace que les llevará a la página web. Este de aquí: http://beta.adalab.es/modulo-2-evaluacion-final-Karlafdez7/
+This page is a cocktail search engine that allows you to create a list of favorite cocktails.
 
-- ¿Quieren verlo con todo y código? Clonar el repositorio en su editor de código preferido y en la terminal teclear: npm star
+How to proceed:
+
+- Search for the cocktail you want in the search bar.
+- A list of cocktails containing the written words/letters will appear. It detects uppercase, lowercase, letter/word matches.
+- We can click on the drink we want to add it to the list of favorites, which will be saved in local storage for future searches.
+- We can remove any drink from our favorites list using the following three options:
+- Click on the trash can icon next to the drink in the favorites list.
+- Click on the drink in the main list.
+- We can delete all favorite items by selecting "X".
+- Pressing the reset button will delete all data from the lists, search engine, and local storage. In addition, the web page will be refreshed.
+
+## How this website has been created:
+
+- Modifying the DOM from JavaScript
+- Creating fetch requests and promises
+- Managing information in JSON format
+- Working with server response
+- Working with data listings: arrays [] and objects {}
+- Using conditionals
+- Using functions to structure the code
+- Listening to the DOM and acting accordingly
+- Using LocalStorage to store information in the browser
+
+### I leave you some images of the project
+
+
+<div align="center">
+<p> Website:
+</p>
+<img width="55%" height="45%" src="https://github.com/Karlafdez7/Cocktails-selection/blob/main/src/images/Homepages_README.png?raw=true" alt="cover" />
+</br>
+<img width="55%" height="45%" src="https://github.com/Karlafdez7/Cocktails-selection/blob/main/src/images/Search_README.png?raw=true" alt="cover" />
+</br>
+<p> LocalStorage:
+</p>
+<img width="35%" height="35%" src="https://github.com/Karlafdez7/Cocktails-selection/blob/main/src/images/LocalStorage.png?raw=true" alt="cover" />
+</div>
+</br>
+<p  align="center"> Cocktail API:
+</p>
+<img  align="center" width="15%" height="15%" src="https://github.com/Karlafdez7/Cocktails-selection/blob/main/src/images/API.png?raw=true" alt="cover" />
+</div>
+
+## To start the project:
+
+- In the GitHub repository - About section, you can find the link that will take you to the website. Here it is:
+
+- Want to see it with all the code? Clone the repository in your preferred code editor and type in the terminal: npm start
 
 ```bash
 npm start
 ```
 
-#### ¿Qué se ha usado para el proyecto?:
+#### What has been used for the project?:
 
-- En este proyecto se ha realizado una estructura básica de HTML: El index.html se ha dividido en archivos: header, main, footer.
-- Para dotar de estilo y visualidad a la página web se ha usado SASS: El archivo Main.sccs está dividido en: header, page y footer.
-- Para que puedan interactuar con la página se ha dado uso de JavaScript: lo encontraran en la carpeta JS - main.js.
-- Se ha usado AJAX y APIS para poder realizar peticiones al servidor, pero no solo eso, para que se pueda trabajar con la información recogida se ha dado uso de JSON. Además, se ha usado el LocalStorage para guardar información de los cócteles favoritos.
+- In this project, a basic HTML structure has been created: The index.html has been divided into files: header, main, footer.
+- To give style and visual appeal to the website, SASS has been used: The Main.sccs file is divided into: header, page, and footer.
+- To enable interaction with the website, JavaScript has been used: You can find it in the JS - main.js folder.
+- AJAX and APIs have been used to make requests to the server, but not only that, JSON has been used to work with the collected information. Additionally, LocalStorage has been used to save information about favorite cocktails.
 
-#### A tener en cuenta sobre el repositorio:
+#### Things to keep in mind about the repository:
 
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas
+- The `src/` folder contains the files for our website, such as HTML, CSS, JS...
+- The `public/` and `docs/` folders are generated
 
-## ¡Muchas gracias por su tiempo e interés!
+## Thank you very much for your time and interest!
