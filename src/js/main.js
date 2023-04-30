@@ -73,7 +73,8 @@ function handleClick(event) {
 //El objetivo es poder pintar los cocktails
 //Se recoge la función renderCocktailsStructure para meter los datos de los cocktails dentro de la estructura
 //Esta función (renderCocktailsList) se llevará al Fetch para que se rellene una vez la API se haya traído a nuestro proyecto. Debemos tener en cuenta que el FETCH tarda más (aunque imperceptible) en cargar que el resto de ejecuciones, por eso lo debemos llamar en FETCH. 
-function renderCocktailsList (listCocktailsData) {    
+function renderCocktailsList (listCocktailsData) {
+    listCocktails.innerHTML='';    
     for (const cocktails of listCocktailsData) {        
         if (cocktails.strDrinkThumb) { 
         listCocktails.innerHTML += renderCocktailsStructure(cocktails);         
@@ -155,8 +156,9 @@ function handleClickXFavourite (ev) {
      }
     console.log(listFavouritesCocktailsData);
     renderFavourites(listFavouritesCocktailsData);
+    renderCocktailsList (listCocktailsData)
     localStorage.setItem('itemCocktails', JSON.stringify(listFavouritesCocktailsData)); 
-    console.log('Hola')
+    
 
 }
 
@@ -212,5 +214,10 @@ btnDeleteFavourites.addEventListener('click', handleClickDeleteFavourites)
 
 //Traemos el botón Reset a JS y le damos un evento click
 btnResetUser.addEventListener('click', handleClickResetAll)
+
+
+
+
+
 
 
