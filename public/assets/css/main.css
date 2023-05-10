@@ -8,10 +8,23 @@
 .main {
   background-image: url(../images/fun-cocktail.jpeg);
   background-size: contain; }
+
+.main-container-title {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 1rem;
+  color: black; }
   @media (min-width: 768px) {
-    .main {
-      display: grid;
-      grid-template-columns: 1fr 1fr; } }
+    .main-container-title {
+      font-size: 7rem; } }
+  @media (min-width: 1380px) {
+    .main-container-title {
+      font-size: 10rem; } }
+
+@media (min-width: 768px) {
+  .main-container-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 768px) {
   .container-cocktails {
@@ -26,7 +39,7 @@
   @media (min-width: 768px) {
     .title-cocktails {
       font-size: 4rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .title-cocktails {
       margin-top: 3rem;
       font-size: 6rem;
@@ -58,7 +71,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
       margin: 0 0 1rem 2rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .list-cocktails {
       gap: 3rem; } }
 
@@ -69,7 +82,7 @@
   @media (min-width: 768px) {
     .name-cocktail {
       font-size: 2rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .name-cocktail {
       font-size: 4rem;
       font-weight: 500;
@@ -84,9 +97,9 @@
     .image-cocktails {
       width: 10rem;
       height: 10rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .image-cocktails {
-      margin: 2rem 7rem;
+      margin: 2rem 5rem;
       width: 15rem;
       height: 15rem; } }
 
@@ -96,7 +109,7 @@
   grid-template-columns: 1fr 1fr;
   margin-left: 3rem;
   gap: 1rem; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .list-favourites {
       width: 40%;
       display: grid;
@@ -117,7 +130,7 @@
   @media (min-width: 768px) {
     .title-favourites {
       font-size: 4rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .title-favourites {
       margin-top: 3rem;
       font-size: 6rem; } }
@@ -140,7 +153,7 @@
   @media (min-width: 768px) {
     .btn-delet {
       margin-left: 1.5rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .btn-delet {
       font-size: 3rem;
       padding: 1rem 4rem;
@@ -156,7 +169,7 @@
   font-size: 2rem;
   font-weight: 500;
   text-align: center; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .name-cocktail-fav {
       font-size: 4rem;
       font-weight: 500;
@@ -166,7 +179,7 @@
 .x-delete {
   margin-left: .2rem;
   font-size: 2rem; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .x-delete {
       margin-left: 1rem;
       font-size: 3rem; } }
@@ -179,9 +192,9 @@
     .image-cocktails_fav {
       width: 10rem;
       height: 10rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .image-cocktails_fav {
-      margin: 0 5rem;
+      margin: 0 4rem;
       width: 20rem;
       height: 20rem; } }
 
@@ -204,7 +217,7 @@
   @media (min-width: 768px) {
     .title {
       font-size: 5rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .title {
       font-size: 8rem; } }
 
@@ -223,7 +236,7 @@
       font-size: 7rem;
       font-weight: 400;
       color: darkblue; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .form {
       display: flex;
       justify-content: end;
@@ -242,7 +255,7 @@
       flex-direction: row;
       align-items: center;
       margin: 0 0.5rem 0 0; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .input-search {
       font-size: 6rem; } }
 
@@ -252,7 +265,7 @@
   @media (min-width: 768px) {
     .input-search-text {
       margin-right: 0.5rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .input-search-text {
       font-size: 3rem; } }
 
@@ -261,7 +274,7 @@
   @media (min-width: 768px) {
     .input-search-content {
       margin: 0 0.5rem 0 0; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .input-search-content {
       margin-left: 1rem;
       font-size: 4rem; } }
@@ -271,7 +284,7 @@
   @media (min-width: 768px) {
     .button {
       margin-bottom: 2rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .button {
       margin-bottom: 0.5rem; } }
 
@@ -282,7 +295,7 @@
   border-radius: 1rem;
   padding: 0.5rem;
   margin-right: 0.5rem; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .btnSearch {
       font-size: 2rem;
       padding: 1rem 2rem;
@@ -295,7 +308,7 @@
   padding: 0.5rem;
   background-color: cornflowerblue;
   color: aliceblue; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .btnReasert {
       padding: 1rem 2rem;
       font-size: 2rem;
@@ -309,7 +322,7 @@
 .footer-copy {
   margin: 1rem;
   font-size: 1.5rem; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .footer-copy {
       margin: 1rem;
       font-size: 2.5rem; } }
@@ -318,7 +331,7 @@
   margin: 2rem 1rem 2rem 3rem;
   width: 4rem;
   height: 4rem; }
-  @media (min-width: 1080px) {
+  @media (min-width: 1380px) {
     .img-cocktail {
       margin: 3rem 1rem 3rem 3rem;
       width: 8rem;

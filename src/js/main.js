@@ -165,8 +165,10 @@ function handleClickXFavourite (ev) {
 //Al click debemos ofrecerle una función que indique que debe pasar: en este caso lo que se busca con el delet favourite es que los cócteles que estan en favorito se limpie. 
 //Si lo que se busca es vaciar la lista de favoritos
 function handleClickDeleteFavourites () {
+    listCocktails.innerHTML= '';
     listFavourites.innerHTML = '';
     localStorage.removeItem('itemCocktails');
+    location.reload();
 
 }
 
@@ -186,7 +188,7 @@ function handleClickResetAll () {
 //Primer evento asociado a la busqueda que haga la usuaria de cocktails. 
 
 btnSearchUser.addEventListener('click',handleClick);
-
+userSearch.addEventListener('keyup',handleClick)
 //Creamos la función que va a sacar todos los LI (mediante bucle) para poder generar en cada uno de ellos el evento click
 //Una vez ha sido creado lo tengo que llamar 
 function addEventToCocktails() {

@@ -23,31 +23,35 @@
         <form action="" class="form">
             <label class="input-search">
                 <p class="input-search-text" for="input"> Buscador de cócteles:</p>
-                <input type="text" id="input-search-content" class=" input js-inputSearch" />
+                <input type="search" id="input-search-content" class=" input js-inputSearch" />
             </label>
             <label class="button" for="search">
                 <input type="button" value="Buscar" id="search" class="btnSearch js-btnSearch" />
                 <input type="button" value="Reset" id="reset" class="btnReasert js-btnReset" />
             </label>
-
         </form>
     </header>
     <main class="main">
-      <section lolclass="container-cocktails">
-        <h2 class="title-cocktails">Resultado de búsqueda</h2>
-        <ul class="list-cocktails js-cocktails">
-        </ul>
+      <section class="main-container-title">
+        <h2>¡Encuentra tu coctel aquí!</h2>
       </section>
-      <section class="container-cocktails">
-        <div class="favourites-title-button">
-          <h2 class="title-favourites"> Favoritos </h2>
-          <label for="input">
-            <input type="button" value="Reset" class="btn-delet js-btnDelet" />
-          </label>
-        </div>
-        <ul class="list-favourites js-favourites">
-        </ul>
-      </section>
+      <div class="main-container-lists">
+        <section lolclass="container-cocktails">
+          <h2 class="title-cocktails">Resultado de búsqueda</h2>
+          <ul class="list-cocktails js-cocktails">
+          </ul>
+        </section>
+        <section class="container-cocktails">
+          <div class="favourites-title-button">
+            <h2 class="title-favourites"> Favoritos </h2>
+            <label for="input">
+              <input type="button" value="Reset" class="btn-delet js-btnDelet" />
+            </label>
+          </div>
+          <ul class="list-favourites js-favourites">
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
         <img class="img-cocktail" src="./assets/images/logococktail.png" alt="cocktail">
