@@ -21,32 +21,33 @@
     <header class="header">
         <h1 class="title"> PERDÓN QUE MI CÓCTEL TE SAL.PIQUE </h1>
         <form action="" class="form">
-            <label class="input-search" for="input"> Buscador de cócteles:
-                <input type="text" id="input" class=" input js-inputSearch" />
+            <label class="input-search">
+                <p class="input-search-text" for="input"> Buscador de cócteles:</p>
+                <input type="text" id="input-search-content" class=" input js-inputSearch" />
             </label>
-            <label for="search">
+            <label class="button" for="search">
                 <input type="button" value="Buscar" id="search" class="btnSearch js-btnSearch" />
-            </label>
-            <input type="button" value="Reset" id="reset" class="btnReasert js-btnReset" />
+                <input type="button" value="Reset" id="reset" class="btnReasert js-btnReset" />
             </label>
 
         </form>
     </header>
     <main class="main">
-      <section class="container-cocktails">
+      <section lolclass="container-cocktails">
         <h2 class="title-cocktails">Resultado de búsqueda</h2>
         <ul class="list-cocktails js-cocktails">
         </ul>
       </section>
       <section class="container-cocktails">
-        <h2 class="title-favourites"> Favoritos </h2>
+        <div class="favourites-title-button">
+          <h2 class="title-favourites"> Favoritos </h2>
+          <label for="input">
+            <input type="button" value="Reset" class="btn-delet js-btnDelet" />
+          </label>
+        </div>
         <ul class="list-favourites js-favourites">
         </ul>
       </section>
-      <label for="input">
-        <input type="button" value="Reset" class="btn-delet js-btnDelet" />
-      </label>
-
     </main>
     <footer class="footer">
         <img class="img-cocktail" src="./assets/images/logococktail.png" alt="cocktail">

@@ -1,43 +1,121 @@
 .title {
     display: flex;
     justify-content: center;
-    font-size: 8rem;
-    margin: 10rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
     font-weight: bold;
     color: darkblue;
-    text-shadow: -3px 3px rgb(3, 3, 88);
+    text-shadow: -1px 1px rgb(3, 3, 88);
+
+    @media (min-width: 768px) {
+        font-size: 5rem;
+    }
+    @media (min-width:1080px) {
+        font-size: 8rem;
+    }
 }
 
 .form {
     display: flex;
-    justify-content: end;
-    // flex-direction: column;
-    margin: 5rem;
-    font-size: 7rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
     font-weight: 400;
     color: darkblue;
+        
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: end;
+        margin: 2rem;
+        font-size: 7rem;
+        font-weight: 400;
+        color: darkblue;
+    }
+        
+    @media (min-width:1080px) {
+        display: flex;
+        justify-content: end;
+        margin: 5rem;
+        font-size: 7rem;
+        font-weight: 400;
+        color: darkblue;
+    }
 }
 
-.input{
-    border-style: dotted;
-    border-color: cornflowerblue;
-    // padding: 2rem 4rem;
-    margin-left: 1rem;
-    font-size: 4rem;
+.input-search{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    @media (min-width: 768px){
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0.5rem 0 0;
+    }
+    @media (min-width:1080px){
+        font-size: 6rem;
+    }
+}
+.input-search-text{
+    font-size: 2rem;
+    text-align: center;
+    @media (min-width: 768px) {
+        margin-right: 0.5rem;
+    }
+        
+    @media (min-width:1080px) {
+        font-size: 3rem;    
+    }
+}
+
+.input-search-content{
+    font-size: 1.5rem;
+    @media (min-width: 768px) {
+        margin:0 0.5rem 0 0;
+    }
+        
+    @media (min-width:1080px) {
+        margin-left: 1rem;
+        font-size: 4rem;
+    }
+}
+
+.button{
+    margin-bottom: 1rem;
+    @media (min-width: 768px){
+        margin-bottom: 2rem;
+    }
+    @media (min-width:1080px){
+        margin-bottom: 0.5rem;
+    }
 }
 .btnSearch {
-    font-size: 3rem;
-    padding: 1rem 2rem;
-    margin: 0 2rem;
-    border-radius: 2rem;
     background-color: cornflowerblue;
     color: aliceblue;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+        
+    @media (min-width:1080px) {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        margin: 0 2rem;
+        border-radius: 2rem;
+    }
 }
 
 .btnReasert {
-    padding: 1rem 2rem;
-    font-size: 3rem;
-    border-radius: 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
     background-color: cornflowerblue;
     color: aliceblue;
+       
+    @media (min-width:1080px) {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        border-radius: 2rem;
+    }
 }

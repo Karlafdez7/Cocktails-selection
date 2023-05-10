@@ -6,128 +6,300 @@
   font-family: 'Caveat', cursive; }
 
 .main {
-  background-image: url(../images/fun-cocktail.png);
-  margin: 50px;
-  display: flex;
-  justify-content: space-evenly; }
+  background-image: url(../images/fun-cocktail.jpeg);
+  background-size: contain; }
+  @media (min-width: 768px) {
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+
+@media (min-width: 768px) {
+  .container-cocktails {
+    padding: 0 2rem; } }
 
 .title-cocktails {
-  margin-top: 3rem;
-  font-size: 7rem;
-  background-color: white;
+  font-size: 3rem;
+  padding-top: 1.5rem;
   color: darkblue;
-  text-shadow: -3px 3px #030358;
+  text-shadow: -1px 1px #030358;
   text-align: center; }
+  @media (min-width: 768px) {
+    .title-cocktails {
+      font-size: 4rem; } }
+  @media (min-width: 1080px) {
+    .title-cocktails {
+      margin-top: 3rem;
+      font-size: 6rem;
+      color: darkblue;
+      text-align: center; } }
 
 .list-all {
   color: darkblue;
   background-color: white;
-  padding: 3rem;
-  margin-top: 2rem; }
+  padding: 1rem;
+  margin-top: 1rem; }
+  @media (min-width: 768px) {
+    .list-all {
+      margin-top: 2rem; } }
+  @media (min-with: 1080px) {
+    .list-all {
+      padding: 0; } }
 
 .list-cocktails {
-  width: 40%;
+  width: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem; }
+  margin-left: 3rem;
+  gap: 1rem; }
+  @media (min-width: 768px) {
+    .list-cocktails {
+      width: 20%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 0 0 1rem 2rem; } }
+  @media (min-width: 1080px) {
+    .list-cocktails {
+      gap: 3rem; } }
 
 .name-cocktail {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 500;
-  text-align: center;
-  margin: 3rem; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    .name-cocktail {
+      font-size: 2rem; } }
+  @media (min-width: 1080px) {
+    .name-cocktail {
+      font-size: 4rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 1rem; } }
 
 .image-cocktails {
-  margin: 2rem 15rem;
-  width: 40rem;
-  height: 40rem; }
-
-.title-favourites {
-  margin-top: 3rem;
-  font-size: 7rem;
-  background-color: white;
-  color: darkblue;
-  text-shadow: -3px 3px #030358;
-  text-align: center; }
-
-.btn-delet {
-  font-size: 3rem;
-  padding: 1rem 4rem;
-  margin: 4.5rem 2rem;
-  border-radius: 2rem;
-  background-color: cornflowerblue;
-  color: aliceblue;
-  display: flex;
-  justify-content: end; }
+  margin: 1rem;
+  width: 8rem;
+  height: 8rem; }
+  @media (min-width: 768px) {
+    .image-cocktails {
+      width: 10rem;
+      height: 10rem; } }
+  @media (min-width: 1080px) {
+    .image-cocktails {
+      margin: 2rem 7rem;
+      width: 15rem;
+      height: 15rem; } }
 
 .list-favourites {
-  width: 40%;
+  width: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem; }
+  margin-left: 3rem;
+  gap: 1rem; }
+  @media (min-width: 1080px) {
+    .list-favourites {
+      width: 40%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem; } }
 
 .list-fav {
   background-color: rgba(230, 230, 126, 0.8);
   padding: 1rem;
-  margin-top: 2rem; }
+  margin: 2rem 0; }
+
+.title-favourites {
+  font-size: 3rem;
+  padding-top: 1.5rem;
+  color: darkblue;
+  text-shadow: -1px 1px #030358;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .title-favourites {
+      font-size: 4rem; } }
+  @media (min-width: 1080px) {
+    .title-favourites {
+      margin-top: 3rem;
+      font-size: 6rem; } }
+
+@media (min-width: 768px) {
+  .favourites-title-button {
+    display: flex;
+    justify-content: center;
+    align-items: end; } }
+
+.btn-delet {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: .5rem 1rem 1rem 3rem;
+  border-radius: 2rem;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .btn-delet {
+      margin-left: 1.5rem; } }
+  @media (min-width: 1080px) {
+    .btn-delet {
+      font-size: 3rem;
+      padding: 1rem 4rem;
+      margin-left: 2.5rem;
+      border-radius: 2rem;
+      background-color: cornflowerblue;
+      color: aliceblue;
+      display: flex;
+      justify-content: end; } }
 
 .name-cocktail-fav {
-  font-size: 4rem;
+  color: #823939;
+  font-size: 2rem;
   font-weight: 500;
-  text-align: center;
-  margin: 3rem;
-  color: #823939; }
+  text-align: center; }
+  @media (min-width: 1080px) {
+    .name-cocktail-fav {
+      font-size: 4rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 1rem; } }
 
 .x-delete {
-  margin-left: 2rem;
-  font-size: 5rem; }
+  margin-left: .2rem;
+  font-size: 2rem; }
+  @media (min-width: 1080px) {
+    .x-delete {
+      margin-left: 1rem;
+      font-size: 3rem; } }
 
 .image-cocktails_fav {
-  margin: 2rem 15rem;
-  width: 30rem;
-  height: 30rem; }
+  margin: 1rem;
+  width: 8rem;
+  height: 8rem; }
+  @media (min-width: 768px) {
+    .image-cocktails_fav {
+      width: 10rem;
+      height: 10rem; } }
+  @media (min-width: 1080px) {
+    .image-cocktails_fav {
+      margin: 0 5rem;
+      width: 20rem;
+      height: 20rem; } }
 
 .select.list-all {
   color: white;
   background-color: darkblue; }
 
+::marker {
+  color: white; }
+
 .title {
   display: flex;
   justify-content: center;
-  font-size: 8rem;
-  margin: 10rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem;
   font-weight: bold;
   color: darkblue;
-  text-shadow: -3px 3px #030358; }
+  text-shadow: -1px 1px #030358; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 5rem; } }
+  @media (min-width: 1080px) {
+    .title {
+      font-size: 8rem; } }
 
 .form {
   display: flex;
-  justify-content: end;
-  margin: 5rem;
-  font-size: 7rem;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
   font-weight: 400;
   color: darkblue; }
+  @media (min-width: 768px) {
+    .form {
+      flex-direction: row;
+      justify-content: end;
+      margin: 2rem;
+      font-size: 7rem;
+      font-weight: 400;
+      color: darkblue; } }
+  @media (min-width: 1080px) {
+    .form {
+      display: flex;
+      justify-content: end;
+      margin: 5rem;
+      font-size: 7rem;
+      font-weight: 400;
+      color: darkblue; } }
 
-.input {
-  border-style: dotted;
-  border-color: cornflowerblue;
-  margin-left: 1rem;
-  font-size: 4rem; }
+.input-search {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .input-search {
+      flex-direction: row;
+      align-items: center;
+      margin: 0 0.5rem 0 0; } }
+  @media (min-width: 1080px) {
+    .input-search {
+      font-size: 6rem; } }
+
+.input-search-text {
+  font-size: 2rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .input-search-text {
+      margin-right: 0.5rem; } }
+  @media (min-width: 1080px) {
+    .input-search-text {
+      font-size: 3rem; } }
+
+.input-search-content {
+  font-size: 1.5rem; }
+  @media (min-width: 768px) {
+    .input-search-content {
+      margin: 0 0.5rem 0 0; } }
+  @media (min-width: 1080px) {
+    .input-search-content {
+      margin-left: 1rem;
+      font-size: 4rem; } }
+
+.button {
+  margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    .button {
+      margin-bottom: 2rem; } }
+  @media (min-width: 1080px) {
+    .button {
+      margin-bottom: 0.5rem; } }
 
 .btnSearch {
-  font-size: 3rem;
-  padding: 1rem 2rem;
-  margin: 0 2rem;
-  border-radius: 2rem;
   background-color: cornflowerblue;
-  color: aliceblue; }
+  color: aliceblue;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem; }
+  @media (min-width: 1080px) {
+    .btnSearch {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      margin: 0 2rem;
+      border-radius: 2rem; } }
 
 .btnReasert {
-  padding: 1rem 2rem;
-  font-size: 3rem;
-  border-radius: 2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
   background-color: cornflowerblue;
   color: aliceblue; }
+  @media (min-width: 1080px) {
+    .btnReasert {
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      border-radius: 2rem; } }
 
 .footer {
   display: flex;
@@ -136,12 +308,21 @@
 
 .footer-copy {
   margin: 1rem;
-  font-size: 2.5rem; }
+  font-size: 1.5rem; }
+  @media (min-width: 1080px) {
+    .footer-copy {
+      margin: 1rem;
+      font-size: 2.5rem; } }
 
 .img-cocktail {
-  margin: 3rem 1rem 3rem 3rem;
-  width: 8rem;
-  height: 8rem; }
+  margin: 2rem 1rem 2rem 3rem;
+  width: 4rem;
+  height: 4rem; }
+  @media (min-width: 1080px) {
+    .img-cocktail {
+      margin: 3rem 1rem 3rem 3rem;
+      width: 8rem;
+      height: 8rem; } }
 
 .main__list {
   padding-left: 2rem;
