@@ -24,7 +24,8 @@
 @media (min-width: 768px) {
   .main-container-lists {
     display: grid;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; } }
 
 @media (min-width: 768px) {
   .container-cocktails {
@@ -73,7 +74,8 @@
       margin: 0 0 1rem 2rem; } }
   @media (min-width: 1380px) {
     .list-cocktails {
-      gap: 3rem; } }
+      gap: 3rem;
+      margin-left: 5rem; } }
 
 .name-cocktail {
   font-size: 2rem;

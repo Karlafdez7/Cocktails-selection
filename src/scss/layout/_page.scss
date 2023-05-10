@@ -21,7 +21,8 @@
   @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-    }
+      justify-content: center;
+  }
 }
 
 .container-cocktails{
@@ -79,6 +80,7 @@
     
   @media (min-width:1380px) {
     gap: 3rem;
+    margin-left: 5rem;
   }
 }
 
