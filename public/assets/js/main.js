@@ -93,10 +93,10 @@ function renderCocktailsStructure(cocktails) {
     const selectGeneral=listFavouritesCocktailsData.find(cocktailsFav => cocktails.idDrink ===cocktailsFav.idDrink)
     let html ="";
       if (selectGeneral !== undefined){
-        html =  `<li class="js-elementLi list-all select" id=${cocktails.idDrink}><h3 class="name-cocktail">${cocktails.strDrink}</h3>
-        <img class="image" src= ${cocktails.strDrinkThumb} alt="${cocktails.strDrink}" title="${cocktails.strDrink}"/> </li>`;
+        html =  `<li class="js-elementLi item-all select" id=${cocktails.idDrink}><h3 class="name-cocktail">${cocktails.strDrink}</h3>
+        <img class="image-cocktails" src= ${cocktails.strDrinkThumb} alt="${cocktails.strDrink}" title="${cocktails.strDrink}"/> </li>`;
         } else {
-            html =  `<li class="js-elementLi list-all" id=${cocktails.idDrink}><h3 class="name-cocktail">${cocktails.strDrink}</h3>
+            html =  `<li class="js-elementLi item-all" id=${cocktails.idDrink}><h3 class="name-cocktail">${cocktails.strDrink}</h3>
             <img class="image-cocktails" src= ${cocktails.strDrinkThumb} alt="${cocktails.strDrink}" title="${cocktails.strDrink}"/> </li>`;
         }      
   
